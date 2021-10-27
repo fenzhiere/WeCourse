@@ -20,7 +20,8 @@
 
 一隅一角，满载思念
 
- 
+ ![01f35361de7e03b037c9b688e95f9e6](https://user-images.githubusercontent.com/93241668/139003899-36d1e33a-4ea1-4be5-89ca-cf061ff7499d.jpg)
+
 
 # 二 功能规划
 1. 校友工作呈现更透明
