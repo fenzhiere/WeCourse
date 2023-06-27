@@ -7,8 +7,9 @@
 活动评价：居民可以通过小程序对参加的社区活动进行评价，提供宝贵的意见和建议，帮助社区改进活动质量。
 个人中心：用户可以在个人中心查看自己的活动报名记录、签到记录等信息。 6．打卡模块：可以帮助社区居民记录和评比每天的健身，学习，阅读，志愿者等活动。通过完成一个个小目标帮助大家更好地管理自己的时间和目标。
 本项目前后端完整代码包括公告通知，社区风采，活动分类与列表，活动报名与评价，打卡项目列表，打卡排行与每日动态，我的活动报名，我的每日打卡；后台打卡项目管理，打卡记录管理与导出，后台活动与报名管理，报名审核与数据导出等功能，活动组织方可以自定义要填写的内容，比如姓名、性别、年龄，身份证、手机号等。采用腾讯提供的小程序云开发解决方案，无须服务器和域名。
- ![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/990cd5a2-1e27-4224-abcf-11ec5628f93e)
-![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/0a5c2f62-0fe7-4a0f-bf14-47435d4a8f8d)
+ ![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/18a42ca8-f17e-401f-b644-d742d640b31a)
+![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/9f70e127-432d-43c8-af38-cca9c0b4e03f)
+
 
 
 
@@ -24,13 +25,14 @@
 ## 作者
 - 如有疑问，欢迎骚扰联系我：开发交流，技术分享，问题答疑，功能建议收集，版本更新通知，安装部署协助，小程序开发定制等。
 - 俺的微信: 
- 
-![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/1668c676-39b3-407c-a155-962203d0f8d9)
+ ![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/8633d387-fd09-4dd7-bc62-6e65a865acbb)
+
 
 
 
 ## 演示 
- ![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/4defa8bd-ed49-44eb-9748-64b9a25012e3)
+ ![image](https://github.com/fenzhiere/WeStreetAppt/assets/93241668/fed7d8c1-39c8-4d9f-a5a1-e93bf3ea6fb4)
+
 
 
 ## 安装
