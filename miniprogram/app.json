@@ -1,0 +1,126 @@
+{
+    "pages": [
+        "projects/activitystreet/pages/default/index/default_index",
+        "projects/activitystreet/pages/about/index/about_index",
+        "projects/activitystreet/pages/search/search",
+        "projects/activitystreet/pages/my/index/my_index",
+        "projects/activitystreet/pages/my/reg/my_reg",
+        "projects/activitystreet/pages/my/edit/my_edit",
+        "projects/activitystreet/pages/my/foot/my_foot",
+        "projects/activitystreet/pages/my/fav/my_fav",
+        "projects/activitystreet/pages/news/index/news_index",
+        "projects/activitystreet/pages/news/detail/news_detail",
+        "projects/activitystreet/pages/news/cate1/news_cate1",
+        "projects/activitystreet/pages/admin/news/list/admin_news_list",
+        "projects/activitystreet/pages/admin/news/add/admin_news_add",
+        "projects/activitystreet/pages/admin/news/edit/admin_news_edit",
+        "projects/activitystreet/pages/admin/setup/about/admin_setup_about",
+        "projects/activitystreet/pages/admin/setup/about_list/admin_setup_about_list",
+        "projects/activitystreet/pages/admin/setup/qr/admin_setup_qr",
+        "projects/activitystreet/pages/admin/index/home/admin_home",
+        "projects/activitystreet/pages/admin/index/login/admin_login",
+        "projects/activitystreet/pages/admin/content/admin_content",
+        "projects/activitystreet/pages/admin/mgr/log/admin_log_list",
+        "projects/activitystreet/pages/admin/mgr/edit/admin_mgr_edit",
+        "projects/activitystreet/pages/admin/mgr/list/admin_mgr_list",
+        "projects/activitystreet/pages/admin/mgr/add/admin_mgr_add",
+        "projects/activitystreet/pages/admin/mgr/pwd/admin_mgr_pwd",
+        "projects/activitystreet/pages/admin/user/list/admin_user_list",
+        "projects/activitystreet/pages/admin/user/detail/admin_user_detail",
+        "projects/activitystreet/pages/admin/user/export/admin_user_export",
+        "projects/activitystreet/pages/activity/index/activity_index",
+        "projects/activitystreet/pages/activity/detail/activity_detail",
+        "projects/activitystreet/pages/activity/join/activity_join",
+        "projects/activitystreet/pages/activity/my_join_list/activity_my_join_list",
+        "projects/activitystreet/pages/activity/my_join_detail/activity_my_join_detail",
+        "projects/activitystreet/pages/activity/my_join_self/activity_my_join_self",
+        "projects/activitystreet/pages/activity/calendar/activity_calendar",
+        "projects/activitystreet/pages/activity/join_list/activity_join_list",
+        "projects/activitystreet/pages/admin/activity/join_list/admin_activity_join_list",
+        "projects/activitystreet/pages/admin/activity/self/admin_activity_self",
+        "projects/activitystreet/pages/admin/activity/export/admin_activity_export",
+        "projects/activitystreet/pages/admin/activity/scan/admin_activity_scan",
+        "projects/activitystreet/pages/admin/activity/list/admin_activity_list",
+        "projects/activitystreet/pages/admin/activity/add/admin_activity_add",
+        "projects/activitystreet/pages/admin/activity/edit/admin_activity_edit",
+        "projects/activitystreet/pages/comment/list/comment_list",
+        "projects/activitystreet/pages/comment/add/comment_add",
+        "projects/activitystreet/pages/enroll/index/enroll_index",
+        "projects/activitystreet/pages/enroll/detail/enroll_detail",
+        "projects/activitystreet/pages/enroll/do/enroll_do",
+        "projects/activitystreet/pages/enroll/my_join_list/enroll_my_join_list",
+        "projects/activitystreet/pages/enroll/my_user_list/enroll_my_user_list",
+        "projects/activitystreet/pages/admin/enroll/list/admin_enroll_list",
+        "projects/activitystreet/pages/admin/enroll/add/admin_enroll_add",
+        "projects/activitystreet/pages/admin/enroll/edit/admin_enroll_edit",
+        "projects/activitystreet/pages/admin/enroll/join_list/admin_enroll_join_list",
+        "projects/activitystreet/pages/admin/enroll/export/admin_enroll_export",
+        "projects/activitystreet/pages/product/detail/product_detail",
+        "projects/activitystreet/pages/product/index/product_index",
+        "projects/activitystreet/pages/admin/product/list/admin_product_list",
+        "projects/activitystreet/pages/admin/product/add/admin_product_add",
+        "projects/activitystreet/pages/admin/product/edit/admin_product_edit",
+        "cmpts/public/form/form_set/field/form_set_field",
+        "cmpts/public/form/form_show/content/form_show_content",
+        "pages/test1/test1"
+    ],
+    "window": {
+        "backgroundColor": "#f1f1f1",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#5872CD",
+        "navigationBarTitleText": "街道社区活动小程序",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "custom": false,
+        "backgroundColor": "#FFFFFF",
+        "color": "#999999",
+        "selectedColor": "#5872CD",
+        "list": [
+            {
+                "pagePath": "projects/activitystreet/pages/default/index/default_index",
+                "text": "首页",
+                "iconPath": "/projects/activitystreet/images/tabbar/home.png",
+                "selectedIconPath": "/projects/activitystreet/images/tabbar/home_cur.png"
+            },
+            {
+                "pagePath": "projects/activitystreet/pages/news/index/news_index",
+                "text": "通知",
+                "iconPath": "/projects/activitystreet/images/tabbar/product.png",
+                "selectedIconPath": "/projects/activitystreet/images/tabbar/product_cur.png"
+            },
+            {
+                "pagePath": "projects/activitystreet/pages/activity/index/activity_index",
+                "text": "活动",
+                "iconPath": "/projects/activitystreet/images/tabbar/enroll.png",
+                "selectedIconPath": "/projects/activitystreet/images/tabbar/enroll_cur.png"
+            },
+            {
+                "pagePath": "projects/activitystreet/pages/enroll/index/enroll_index",
+                "text": "打卡",
+                "iconPath": "/projects/activitystreet/images/tabbar/checkin.png",
+                "selectedIconPath": "/projects/activitystreet/images/tabbar/checkin_cur.png"
+            },
+            {
+                "pagePath": "projects/activitystreet/pages/my/index/my_index",
+                "text": "我的",
+                "iconPath": "/projects/activitystreet/images/tabbar/my.png",
+                "selectedIconPath": "/projects/activitystreet/images/tabbar/my_cur.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+        }
+	},
+	"requiredPrivateInfos": [
+		"chooseLocation"
+	],
+    "usingComponents": {
+        "cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+        "cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+        "cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+    },
+    "sitemapLocation": "sitemap.json"
+}
