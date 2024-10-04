@@ -1,0 +1,48 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l load-project"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l load-project"></view>
+<block wx:if="{{isLoad}}">
+	<image src="{{meet.MEET_OBJ.cover[0]}}" mode="widthFix" class="loading cover" lazy-load="{{true}}" />
+	<view class="main">
+
+		<view class="title-box">
+			<view class="mark">{{meet.MEET_CATE_NAME}}</view>
+			<view class="left">
+				<image bind:tap="url" data-url="{{meet.MEET_OBJ.cover[0]}}" data-type="image" mode="aspectFill" class="loading shadow" src="{{meet.MEET_OBJ.cover[0]}}" />
+			</view>
+			<view class="right">
+				<view class="line1">{{meet.MEET_TITLE}}</view>
+				<view class="line2">
+					<view class="tag-list">
+						<text wx:for="{{meet.MEET_OBJ.tag}}" wx:key="key" wx:for-item="itm">{{itm.title}}</text>
+					</view>
+				</view> 
+			</view>
+
+		</view>
+		<view class="detail-box"> 
+
+			<view  class="article-box">
+				<view class="article" wx:if="{{meet.MEET_OBJ.content && meet.MEET_OBJ.content.length>0}}">
+					<block wx:for="{{meet.MEET_OBJ.content}}" wx:key="key">
+						<view class="content" wx:if="{{item.type=='text'}}">
+							<text user-select="{{true}}">{{item.val}}</text>
+						</view>
+
+						<view class="pics" wx:if="{{item.type=='img'}}">
+							<image bindtap="url" data-type='img' data-url="{{item.val}}" show-menu-by-longpress="{{true}}" class="loading" mode='widthFix' lazy-load="true" src="{{item.val}}">
+							</image>
+						</view>
+					</block>
+				</view>
+			</view>
+
+			 
+		</view>
+
+	</view> 
+
+	<cmpt-detail doTop="{{true}}" mode="left" topBtnShow="{{topBtnShow}}" topBtnBottom="150" tag="" oid="{{id}}" cate="{{meet.MEET_CATE_NAME}}" title="{{meet.MEET_TITLE}}" cover="{{meet.MEET_OBJ.cover[0]}}" qr="{{meet.MEET_QR}}" desc="查看详情" bg="{{skin.PROJECT_COLOR}}">
+
+	</cmpt-detail>
+
+</block>

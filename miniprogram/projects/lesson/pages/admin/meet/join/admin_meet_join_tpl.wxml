@@ -1,0 +1,80 @@
+<cmpt-comm-list source='{{oprt}}' id="cmpt-comm-list" type="{{oprt}}-meet-join-list" search="{{search||''}}" _params="{{_params}}" _menus="{{sortMenus}}" doDate="{{doDate}}" _items="{{sortItems}}" route="{{oprt}}/meet_join_list" topBottom="50" placeholder="搜索手机" sortMenusDefaultIndex="0" bind:list="bindCommListCmpt" isTotalMenu="{{dayId?false:true}}">
+
+	<view slot="searchEnd">
+		<button wx:if="{{!doDate}}" bindtap="bindDateTap" class="btn radius bg-admin text-white margin-right-s">按日期查询</button>
+		<button wx:else bindtap="bindDateTap" class="btn radius bg-admin text-white margin-right-s" style="font-size: 22rpx;">按手机查询</button>
+	</view>
+
+	<!-- List Begin -->
+	<view class="join-list">
+		<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条符合条件记录
+
+		</view>
+
+		<view class="item" wx:for="{{dataList.list}}" wx:key="key">
+			<view class="header">
+				<view class="left">
+
+				</view>
+				<view class="right" data-idx="{{index}}">
+					{{item.JOIN_MEET_TITLE}}
+				</view>
+			</view>
+
+			<view class="info">
+
+				<view class="info-item">
+					<view class="title">课时</view>
+					<view class="mao">：</view>
+					<view class="content">{{item.JOIN_COURSE_CNT}}节</view>
+				</view>
+
+				<view class="info-item">
+					<view class="title">上课时间</view>
+					<view class="mao">：</view>
+					<view class="content">{{item.JOIN_DAY}} {{item.JOIN_DAY_START}} ~ {{item.JOIN_DAY_END}}</view>
+				</view>
+
+				<view class="info-item" bind:tap="url" data-url="../../user/detail/admin_user_detail?id={{item.JOIN_USER_ID}}">
+					<view class="title">用户</view>
+					<view class="mao">：</view>
+					<view class="content">{{item.JOIN_USER_NAME}} - {{item.JOIN_USER_MOBILE}} <text class="text-admin margin-left-xs">[详情]</text></view>
+				</view>
+
+				<view class="info-item">
+					<view class="title">状态</view>
+					<view class="mao">：</view>
+					<view class="content">
+						<view wx:if="{{item.JOIN_STATUS==1}}" class="text-black"><text class="icon-roundcheck margin-right-xxs"></text>排课成功 
+						</view>
+
+					</view>
+				</view>
+
+
+				<view class="info-item add-time">
+					<view class="title text-grey">提交时间</view>
+					<view class="mao text-grey">：</view>
+					<view class="content text-grey">{{item.JOIN_ADD_TIME}}</view>
+				</view>
+				 
+
+				<view class="oprt"> 
+
+					<view bindtap="bindDelTap" data-idx="{{index}}" class="btn bg-orange light margin-right-s">取消并退回课时</view>
+
+				</view>
+			</view>
+
+			<view class="no">{{index+1}}</view>
+		</view>
+	</view>
+	<!-- List END -->
+
+	<!--load begin-->
+	<import src="../../../../../../tpls/public/list_load_tpl.wxml" />
+	<template is="listLoadTpl" data="{{dataList,skin:'text-grey',noHint:'暂无记录'}}" />
+	<!--load end-->
+
+
+</cmpt-comm-list>

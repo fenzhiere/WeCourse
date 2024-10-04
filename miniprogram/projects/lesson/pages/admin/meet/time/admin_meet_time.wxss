@@ -1,0 +1,179 @@
+@import '../../../../../../style/public/admin.wxss';
+
+
+.main-admin {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10rpx 0;
+	padding-bottom: 150rpx;
+}
+
+.form-box {
+	border-radius: 0;
+}
+
+.form-area {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30rpx 0rpx;
+}
+
+.data-hint {
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 2.5;
+	background-color: #fff;
+	text-align: center;
+	color: #333;
+	font-size: 36rpx;
+}
+
+.data-hint .text-day {
+	font-size: 30rpx;
+}
+
+.select-date {
+	background-color: #fff;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: 20rpx;
+}
+
+.time-group {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 20rpx 0rpx 30rpx;
+}
+
+.time-title {
+	position: relative;
+	width: 100%;
+	font-size: 32rpx;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10rpx;
+}
+
+.time-title .icon-moreandroid {
+	position: absolute;
+	right: 0rpx;
+	color: #888;
+	width: 100rpx;
+	text-align: right;
+	padding-right: 20rpx;
+	font-size: 26rpx;
+}
+
+.time-line {
+	width: 100%;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	padding: 25rpx 0;
+	position: relative;
+	align-items: baseline;
+	font-size: 30rpx;
+} 
+
+.time-line .clock {
+	width: 135rpx;
+} 
+
+.time-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 10rpx 20rpx;
+}
+
+.time-box .item {
+	width: 100%;
+	display: flex;
+	font-size: 30rpx;
+	background-color: #f8f8f8;
+	padding: 20rpx 30rpx;
+	border-radius: 8rpx;
+	align-items: baseline;
+	justify-content: space-between;
+	margin-bottom: 16rpx;
+}
+
+.time-box .item .left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	color: #333;
+}
+
+.time-box .item .left .time { 
+	display: flex;
+}
+
+.time-box .item .right {
+	display: flex;
+	align-items: center;
+	font-size: 28rpx;
+}
+
+
+.time-box .item .left .cnt {
+	padding: 4rpx 20rpx;
+	font-size: 28rpx;
+	border-radius: 6rpx;
+	line-height: 40rpx;
+}
+
+.time-box .item .right .delete {
+	padding: 0 30rpx;
+	text-align: right;
+}
+
+.time-oprt {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3;
+	font-size: 32rpx;
+	margin-top: 10rpx;
+	color: var(--adminColor);
+}
+
+.time-oprt .op {
+	padding: 0 15rpx;
+}
+
+.time-oprt .vline {
+	height: 35rpx;
+	width: 1rpx;
+	border-left: 2rpx dotted #aaa;
+}
+
+.text-arrow {
+	font-size: 24rpx;
+	position: absolute;
+	right: 1rpx;
+	color: #ccc;
+}
+
+
+.modal-form .form-group .input-temp {
+	height: 100rpx;
+	text-align: center;
+	border: 1rpx solid #ccc;
+	background-color: #fff;
+}
+
+.bottom-btn {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	color: #fff;
+	line-height: 2.6;
+	font-size: 36rpx;
+}

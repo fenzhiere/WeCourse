@@ -1,0 +1,117 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+
+.main {
+	padding: 0rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 10rpx 20rpx;
+	margin-top: 30rpx;
+}
+
+.list .item {
+	position: relative;
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	padding: 10rpx 14rpx;
+	border-radius: 10rpx;
+	margin-bottom: 60rpx;
+	border-bottom-left-radius: 30rpx;
+}
+
+.list .item .left {
+	margin-right: 20rpx;
+	position: relative;
+	margin-top: -40rpx;
+}
+
+.list .item .left image {
+	width: 160rpx;
+	height: 210rpx;
+	box-shadow: 5rpx 0rpx 10rpx rgba(216, 220, 223, .6);
+	border-radius: 10rpx;
+	border: 2rpx solid #eee;
+	border-bottom-left-radius: 30rpx;
+	border-top-right-radius: 30rpx;
+}
+
+.list .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-bottom: 5rpx;
+	justify-content: space-between;
+}
+
+.list .item .right .line1 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item .right .line1 .title {
+	width: 100%;
+	font-size: 30rpx;
+	border-bottom: 2rpx dotted #ccc;
+	padding: 5rpx 0rpx 15rpx 0;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list .item .right .line1 .title .star {
+	font-size: 20rpx;
+	color: #ccc;
+}
+
+.list .item .right .line1 .title .star>text {
+	margin-right: 0rpx;
+}
+
+.list .item .right .line1 .tag-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15rpx;
+}
+
+.list .item .right .line1 .tag-list>text {
+	padding: 6rpx 10rpx;
+	font-size: 22rpx;
+	margin-right: 10rpx;
+	margin-bottom: 10rpx;
+	background-color: #f2f2f2;
+	border-radius: 6rpx;
+	color: var(--projectCompareColor);
+}
+
+
+.list .item .right .line3 {
+	width: 100%;
+	color: #999;
+	font-size: 24rpx;
+	padding: 0rpx 0;
+	line-height: 40rpx;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 6rpx;
+}
+
+.list .item .right .tag-list .tag {
+	padding: 5rpx 10rpx;
+	background-color: #f2f2f2;
+	margin-right: 5rpx;
+	border-radius: 5rpx;
+	margin-bottom: 11rpx;
+	margin-top: 5rpx;
+	color: #999;
+}

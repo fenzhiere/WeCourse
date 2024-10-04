@@ -1,0 +1,49 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l load-project"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l load-project"></view>
+
+<block wx:if="{{isLoad}}">
+	<view class="main padding-project">
+		<view class="text-pic-list-box margin-top-xs">
+			<view class="item card-project shadow-project">
+				<view class="title-line" bindtap="url" data-url="../detail/meet_detail?id={{join.JOIN_MEET_ID}}">
+					<view class="title content-cut-two">{{join.JOIN_MEET_TITLE}} </view>
+					<view class="arrow"><text class="icon-right"></text></view>
+				</view>
+
+				<view class="author">
+					<text class="icon-remind margin-right-xs text-s"></text><text class="text-cut">{{join.JOIN_DAY}} {{join.JOIN_DAY_START}}～{{join.JOIN_DAY_END}}</text>
+				</view>
+			 
+		 
+			 
+
+			</view>
+
+		</view> 
+	 
+
+		<view class="info-list-box margin-bottom-xxl">
+			<view class="item card-project shadow-project">
+				<view class="info margin-bottom-s">
+					<view class="center text-bold">用户信息</view>
+				</view>
+				<view class="info">
+					<view class="title">姓名：</view>
+					<view class="content">{{join.JOIN_USER_NAME}}</view>
+				</view>
+				<view class="info">
+					<view class="title">手机：</view>
+					<view class="content">{{join.JOIN_USER_MOBILE}}</view>
+				</view>
+
+				<view class="info">
+					<view class="title">扣课：</view>
+					<view class="content">{{join.JOIN_COURSE_CNT}}节</view>
+				</view>
+
+				<view class="info text-grey margin-top-xs text-s">提交时间：{{join.JOIN_ADD_TIME}}</view>
+			 
+			</view>
+		</view>
+	</view>
+</block>

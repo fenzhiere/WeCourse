@@ -1,0 +1,44 @@
+@import "../../../../../style/public/article_list.wxss";
+@import "../../../style/skin.wxss";
+
+.text-pic-list-box .item {
+	padding: 20rpx 30rpx 10rpx 40rpx;
+	position: relative;
+	overflow: hidden;
+}
+ 
+.btn.mid {
+	padding: 0 30rpx;
+}
+
+.text-pic-list-box .item .author {
+	margin-top: 10rpx;
+	font-size: 28rpx;
+	color: #999;
+}
+
+.text-pic-list-box .item .title {
+	position: relative;
+	padding-right: 20rpx; 
+	font-size: 32rpx;
+	display: flex;
+	align-items: center;
+}
+
+.text-pic-list-box .item .data {
+	line-height: 1.5;
+	font-size: 26rpx;
+	color: #666;
+	margin-top: 10rpx;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.text-time {
+	color: #ccc;
+}
+
+.text-pic-list-box .item .title {
+	max-height: unset !important
+}

@@ -1,0 +1,176 @@
+@import "../../../style/skin.wxss";
+
+
+page {
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+}
+
+.main {
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.top {
+	height: 320rpx;
+	background-color: var(--projectColor);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	padding-top: 40rpx;
+	position: relative;
+	overflow: hidden;
+}
+
+.top .inner {
+	width: 100vw;
+	display: flex;
+	padding: 0 25rpx;
+	justify-items: center;
+}
+
+.top .inner .avatar {
+	height: 120rpx;
+	width: 120rpx;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.top .inner .avatar image {
+	height: 80rpx;
+	width: 80rpx;
+	border-radius: 50%;
+}
+
+.top .inner .right {
+	flex: 1;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.top .inner .right .line1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25rpx;
+}
+
+.top .inner .right .line1 .name {
+	font-size: 36rpx;
+	font-weight: bold;
+	margin-right: 20rpx;
+	color: #fff;
+}
+
+.top .inner .right .line1 .type {
+	font-size: 24rpx;
+	padding: 0 25rpx;
+	background-color: #333;
+	color: var(--projectColor);
+	border-radius: 20rpx;
+}
+
+.top .inner .right .line2 {
+	font-size: 24rpx;
+	color: #fff;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 20rpx 0rpx;
+	margin-top: -80rpx;
+	position: relative;
+	padding: 0rpx 20rpx;
+}
+
+.menu .inner {
+	display: flex;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	padding: 30rpx 10rpx;
+	border-radius: 10rpx;
+}
+
+.menu .item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: calc(100% / 3);
+}
+
+.menu .item {
+	border-right: 2rpx dotted #ccc;
+}
+
+.menu .item:last-child {
+	border-right: 0;
+}
+
+.menu .item .title {
+	color: #333;
+	font-weight: bold;
+	font-size: 30rpx;
+	margin-bottom: 15rpx;
+	line-height: 50rpx;
+}
+
+.menu .item .title>text {
+	font-size: 22rpx;
+	font-weight: normal;
+	color: var(--projectColor);
+	margin-left: 4rpx;
+}
+
+.menu .item .desc {
+	color: #aaa;
+	font-size: 24rpx;
+}
+
+
+.list-menu {
+	width: 100%;
+	padding: 0 25rpx;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.list-menu .item {
+	width: 100%;
+	display: flex;
+	font-size: 30rpx;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 35rpx 10rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.list-menu .item:last-child {
+	padding-bottom: 10rpx;
+}
+
+.list-menu .item:last-child {
+	border-bottom: 0rpx;
+}
+
+.list-menu .item .title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	color: #000;
+}
+
+.list-menu .item .title .title-ico {
+	margin-right: 20rpx;
+}

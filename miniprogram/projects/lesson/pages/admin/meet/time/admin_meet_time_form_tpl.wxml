@@ -1,0 +1,81 @@
+<view class="main-{{oprt}}">
+
+	<view class="select-date">
+		<cmpt-calendar mode="one" hasDays="{{hasDays}}" bind:monthChange="bindMonthCmpt" fold="{{false}}" selectTimeout="{{true}}" bind:click="bindDayClickCmpt" />
+	</view>
+
+	<view class="form-area">
+		<view class="form-box">
+			<view class="time-group">
+				<view class="time-title">
+					<text>{{dayDesc}}</text>
+					<text bindtap="bindDaySetTap" class="icon-moreandroid">时间模版</text>
+				</view>
+				<view bindtap="bindTimeAddTap" class="time-line text-orange time-line-hint"><text class="icon-roundadd margin-right-xs"></text>{{dayList.length==0?'尚未添加时段，请添加~':'添加新时段~'}} </view>
+
+
+				<view class="time-box">
+					<view class="item" wx:for="{{dayList}}" wx:key="k1">
+						<view class="left">
+							<view class="time" bind:tap="bindOpenEditTimeModal" data-id="{{item._id}}" data-start="{{item.DAY_START}}" data-end="{{item.DAY_END}}">
+								<text class="icon-edit text-s text-gray"></text>
+								<view class="start">{{item.DAY_START}}</view>
+								<text class="margin-left-xs margin-right-xs text-grey">~</text>
+								<view class="start">{{item.DAY_END}}</view>
+							</view>
+							<view bind:tap="url" data-url="../join/{{oprt}}_meet_join?meetId={{id}}&dayId={{item._id}}" class="cnt bg-blue light margin-left">{{item.DAY_CNT}}人<text class="icon-right text-s text-gray"></text></view>
+						</view>
+						<view class="right">
+							<view bind:tap="bindJoinTap" data-id="{{item._id}}" class="add margin-right"><text class="icon-add"></text>添加学员</view>
+							<view bind:tap="bindDelTime" data-idx="{{index}}" data-id="{{item._id}}" class="delete"><text class="icon-delete text-red"></text></view>
+						</view>
+
+					</view>
+				</view>
+
+			</view>
+
+
+		</view>
+	</view>
+</view>
+
+
+<view class="btn-bottom-{{oprt}}">
+	<view bindtap="url" data-type="back" class="save" style="width: 100%;"> 返回</view>
+	<!--<view bindtap="bindSaveTap" class="save">保存时间设置</view>-->
+</view>
+
+
+
+<cmpt-modal wx:if="{{showTimeModal}}" model:show="{{showTimeModal}}" type="dialog" title="{{curId?'修改':'添加'}}时段" bind:click="{{curId?'bindEditTimeCmpt':'bindInsertTimeCmpt'}}" class="modal-form">
+
+	<view class="form-group">
+		<view class="title">开始时间</view>
+		<cmpt-picker steps="2" isSlot="{{true}}" sourceData="{{daysTimeOptions}}" bind:select="bindTimeStartCmpt" itemMulti="{{[tools.split(start,':')[0],  tools.split(start,':')[1]]}}">
+			<view class="clock box">{{start||'请选择'}} <text class="icon-right text-arrow"></text>
+			</view>
+		</cmpt-picker>
+	</view>
+	<view class="form-group">
+		<view class="title">结束时间</view>
+		<cmpt-picker steps="2" isSlot="{{true}}" sourceData="{{daysTimeOptions}}" bind:select="bindTimeEndCmpt" itemMulti="{{[tools.split(end,':')[0],  tools.split(end,':')[1]]}}">
+			<view class="clock box">{{end||'请选择'}} <text class="icon-right text-arrow"></text>
+			</view>
+		</cmpt-picker>
+	</view>
+</cmpt-modal>
+
+
+<cmpt-modal wx:if="{{saveTempModalShow}}" model:show="{{saveTempModalShow}}" type="dialog" title="保存为模板" bind:click="bindSaveTempCmpt" class="modal-form" subtitle="将当前该日期下的配置的 「{{daysList.length}}项」 时段保存为模板，以便于后续快速调用 :" subtitleAlign="left">
+
+	<view class="form-group">
+		<input maxlength="20" placeholder="请输入模板名称" model:value="{{formTempName}}" class="input-temp"></input>
+	</view>
+</cmpt-modal>
+
+
+
+<!-- top begin -->
+<button wx:if="{{topShow}}" class="btn-fixed bg-gray text-gray btn-top" bindtap="bindTopTap" style="bottom:160rpx"><text class="icon-top"></text></button>
+<!-- top END. -->

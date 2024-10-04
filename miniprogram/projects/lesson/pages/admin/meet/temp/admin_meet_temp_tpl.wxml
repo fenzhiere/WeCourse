@@ -1,0 +1,19 @@
+<view class="main-{{oprt}}">
+	<view class="text-pic-list-box">
+		<view class="item shadow" wx:for="{{temps}}" wx:key="key">
+			<view class="title">
+				<text bindtap="bindSelectTap" data-idx="{{index}}" class="temp-name text-cut">{{item.TEMP_NAME}}</text>
+				<button bindtap="bindSelectTap" data-idx="{{index}}" data-id="{{item._id}}" class="btn mid bg-blue text-white margin-right-s" style="font-weight: normal;">选用</button>
+				<text bindtap="bindDelTap" data-idx="{{index}}" class="icon-delete text-red more"></text>
+			</view>
+			<view class="time-list">
+				<view wx:for="{{item.TEMP_TIMES}}" wx-for wx:key="key1" wx:for-item="timesItem" wx:for-index="timesIndex" class="time-item">
+					<view class="detail">
+						<text class="up">{{timesItem.start}}～{{timesItem.end}}</text>  
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+ 
